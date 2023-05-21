@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "BeaufortforLOL-Bold";
+    src: url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
+    src: url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")
+        format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")
+        format("woff2"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")
+        format("woff"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")
+        format("truetype"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold")
+        format("svg");
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: BeaufortforLOL-Bold, Arial, sans-serif;
+  }
+
+  body {
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    float: left; /* обтекание логотипа */
+  }
+
+  #logo a {
+    display: block;
+    margin: 5px 30px 5px;
+  }
+
+  article {
+    background-color: #1a1a1a;
+    flex: auto;
+    padding: 1em;
+  }
+
+  header,
+  footer {
+    background-color: #040115;
+    height: 90px;
+  }
+
+  .license {
+    display: inline-flex;
+    float: right;
+    margin: 35px;
+  }
+
+
+  .license a img {
+    width: 20px;
+    margin: 0 0 0 10px;
+  }
+
+  @media screen and (min-width: 600px) {
+    body {
+      min-height: 100vh;
+      float: none;
+    }
+
+    main {
+      flex-direction: row;
+      min-height: 100%;
+      flex: 1 1 auto;
+    }
+  }
+
+  /* МЕНЮ НАВИГАЦИИ */
+
+  nav ul {
+    display: inline-flex;
+    padding: 15px 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  nav a {
+    padding: 1em;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background: #35373e;
+  }
+
+  /* ПОИСК */
+
+  .search {
+    float: right;
+  }
+
+  /* styling search bar */
+  .search input[type="text"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+  }
+
+  .search button {
+    display: block;
+    float: right;
+    padding: 15px;
+    margin: 10px 30px auto 0;
+    background: #040115 url(https://clck.ru/338FwJ) no-repeat center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search button img {
+    width: 40px;
+  }
+
+  /* CARD */
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    box-sizing: border-box;
+    margin: 1rem;
+  /*   padding: 1rem; */
+    flex: 0 0 220px;
+  }
+
+  .card > a > img {
+    width: 220px;
+    border: solid #d0a85c;
+  }
+
+  .card > img {
+    width: 220px;
+    border: solid #d0a85c;
+  }
+
+  .card > img:hover {
+    border: solid #0BC4E2;
+  }
+
+  .card > a > img:hover {
+    border: solid #0BC4E2;
+  }

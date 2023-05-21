@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "BeaufortforLOL-Bold";
+    src: url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
+    src: url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")
+        format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")
+        format("woff2"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")
+        format("woff"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")
+        format("truetype"),
+      url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold")
+        format("svg");
+  }
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* добавим выравнивание по центру */
+  }
+  
+
+  html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: BeaufortforLOL-Bold, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+body {
+    color: #fff;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    float: left; /* обтекание логотипа */
+    width: 7%;
+  }
+
+#logo img{
+    width: 100%;
+}
+
+#logo a {
+    display: block;
+    margin:  10% 5%;
+}
+
+header {
+  background-color: #040115;
+  height: 21%;
+
+}
+
+footer{
+    background-color: #040115;
+    height: 30%;
+}
+
+.license {
+  display: inline-flex;
+  float: right;
+  margin: 2%;
+  width: 10%;
+}
+
+.license a img {
+  width: 20%;
+  margin: 0 0 0 5%;
+}
+
+.license a{
+  width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* добавим выравнивание по центру */
+}
+
+.menu {
+    margin-right: 20px; /* добавим отступ справа */
+}
+
+nav ul {
+  display: inline-flex;
+  padding: 15px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+nav a {
+  padding: 1em;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #35373e;
+}
+
+/*ПОИСК*/
+
+.search {
+    flex-grow: 0;
+    flex-shrink: 0;
+    order: 1; /* изменяем порядок элементов */
+    margin-left: 20px; /* добавляем отступ слева */
+    height: 5%; /* изменяем высоту для соответствия макету */
+
+  }
+  
+.search input[type="text"] {
+    width: 100%;
+ /* изменяем высоту для соответствия макету */
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+
+ /*CARD*/
+
+.block_1 {
+    background: url(https://i.yapx.ru/VPZM4.jpg) top;
+    flex: 1 0 auto;
+    padding: 3em;
+}
+
+.short {
+    /* Краткое_описание */
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 25%;
+    height: auto;
+    left: 7%;
+    top: 20vw;
+  
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid #D0A85C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    
+    padding: 2% 1%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 1.5em;
+    text-align: justify;
+    color: #C4B998;
+}
+
+.skills {
+  display:block;
+  flex-flow: column nowrap;
+  margin-left: 85%;
+}
+
+.item {
+  width: 60%;
+  margin: 10px;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  border: 2px solid #D0A85C;
+}
+
+.item img:hover {
+  border: 2px solid #0bc4e2;
+}
+
+.overlay {
+  display: none;
+}
+
+.item:hover .overlay {
+  display: block;
+  position: absolute;
+  width: 200%;
+/*   height: 200px; */
+  right: 110%;
+  top: -10%;
+  padding: 10%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 1);
+  
+  text-align: justify;
+  color: #C4B998;
+}
+
+.name1 {
+    font-size: 10vw;
+    position: absolute;
+    top: 3.5em;
+    left: 40%;
+    color: #D0A85C;
+    text-align: center;
+}
+
+/*HISTORY*/
+
+.history {
+  display: flex;
+  flex-flow: col wrap;
+
+}
+
+.history_item {
+  flex: auto;
+  font-style: normal;
+
+  font-size: 1.4vw;
+  line-height: 1.5em;
+  text-align: justify;
+  color: #C4B998;
+  max-width: 850px;
+  
+  margin: 0 auto;
+
+}
+@media only screen and (max-width: 870px) {
+  .history_item {
+    margin: 0 50px;
+  }
+}
+
+.history_item h1 {
+    font-size: 4vw;
+    text-align: center;
+    color: #D0A85C;
+}
+
+.block_2 {
+  background-color: #1a1a1a;
+/*   flex: 1 0 auto; */
+}
+.options_footer p{
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1vw;
+  display: inline;
+}
+.options_footer{
+  float: left;
+  margin-top: 2%;
+}
