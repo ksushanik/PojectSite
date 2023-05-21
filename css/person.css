@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: BeaufortforLOL-Bold, Arial, sans-serif;
+}
+
+body {
+    color: #fff;
+    font-size: 1.1em;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /*flex: 1 0 auto;*/
+}
+
+.block_1 {
+    background: url(https://i.yapx.ru/VPZM4.jpg) top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block_2 {
+    background-color: #1a1a1a;
+    /*flex: 1 0 auto;*/
+}
+
+/* CARD */
+
+.short {
+    /* Краткое_описание */
+
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px 0 0 50px;
+
+    width: 350px;
+    flex-shrink: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid #D0A85C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+
+    padding: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    /*text-align: justify;*/
+    color: #C4B998;
+}
+
+.name1 {
+    font-size: 100px;
+    margin: 250px auto 0 auto;
+    text-align: center;
+    color: #D0A85C;
+}
+
+.skills {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px 100px 0 auto;
+}
+
+.item {
+    width: 101px;
+    height: 101px;
+    margin: 10px;
+}
+
+.item img {
+    width: 101px;
+    border: 2px solid #D0A85C;
+}
+
+.item img:hover {
+    border: 2px solid #0bc4e2;
+}
+
+.overlay {
+    display: none;
+}
+
+.item:hover .overlay {
+    display: block;
+    position: relative;
+    width: 250px;
+    /*   height: 200px; */
+    right: 280px;
+    top: -180px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(25px);
+    text-align: justify;
+    color: #C4B998;
+}
+
+
+
+.history {
+    display: flex;
+    flex-flow: col wrap;
+}
+
+.history_item {
+    flex: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+    color: #C4B998;
+
+    margin: 0 250px;
+
+}
+
+.history_item h1 {
+    /* ИСТОРИЯ */
+
+    font-size: 64px;
+    text-align: center;
+    color: #D0A85C;
+}
+
+.biography {
+
+    font-size: 22px;
+    text-align: justify;
+    color: #C4B998;
+    margin: 0 250px;
+
+}
+
+.biography_item h1 {
+    font-size: 64px;
+    text-align: center;
+    color: #D0A85C;
+
+}
+
