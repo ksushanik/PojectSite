@@ -8,113 +8,110 @@
     url("//db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold") format("svg");
 }
 
-  * {
+* {
     box-sizing: border-box;
-  }
+}
 
-  html,
-  body {
+html,
+body {
     padding: 0;
     margin: 0;
     font-family: BeaufortforLOL-Bold, Arial, sans-serif;
-  }
+}
 
-  body {
+body {
     color: #fff;
     font-size: 1.1em;
     display: flex;
     flex-direction: column;
-  }
+    background-color: #000;
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #logo {
+#logo {
     float: left; /* обтекание логотипа */
-  }
+}
 
-  #logo a {
+#logo a {
     display: block;
     margin: 5px 30px 5px;
-  }
+}
 
-  article {
+article {
     background-color: #1a1a1a;
     flex: auto;
     padding: 1em;
-  }
+}
 
-  header,
-  footer {
+header,
+footer {
     background-color: #040115;
     height: 90px;
-  }
+}
 
-  .license {
+.license {
     display: inline-flex;
     float: right;
     margin: 35px;
-  }
+}
 
 
-  .license a img {
+.license a img {
     width: 20px;
     margin: 0 0 0 10px;
-  }
+}
 
-  @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     body {
-      min-height: 100vh;
-      float: none;
+        min-height: 100vh;
+        float: none;
     }
 
     main {
-      flex-direction: row;
-      min-height: 100%;
-      flex: 1 1 auto;
+        flex-direction: row;
+        min-height: 100%;
+        flex: 1 1 auto;
     }
-  }
+}
 
-  /* МЕНЮ НАВИГАЦИИ */
+/* МЕНЮ НАВИГАЦИИ */
 
-  nav ul {
+nav ul {
     display: inline-flex;
     padding: 15px 0;
-  }
+}
 
-  ul {
+ul {
     list-style: none;
     margin: 0 auto;
-  }
+}
 
-  nav a {
+nav a {
     padding: 1em;
     display: block;
     color: #ffffff;
     text-decoration: none;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     background: #35373e;
-  }
+}
 
-  /* ПОИСК */
+/* ПОИСК */
 
-  .search {
+.search {
     float: right;
-  }
+}
 
-  /* styling search bar */
-  .search input[type="text"] {
+/* styling search bar */
+.search input[type="text"] {
     width: 300px;
     height: 30px;
     border-radius: 5px;
     border: none;
     margin-top: 30px;
-  }
+}
 
-  .search button {
+.search button {
     display: block;
     float: right;
     padding: 15px;
@@ -122,42 +119,51 @@
     background: #040115 url(https://clck.ru/338FwJ) no-repeat center;
     border: none;
     cursor: pointer;
-  }
+}
 
-  .search button img {
+.search button img {
     width: 40px;
-  }
+}
 
-  /* CARD */
+/* CARD */
 
-  .container {
+.container {
     display: flex;
     flex-flow: row wrap;
     margin: 20px;
     justify-content: center;
-  }
+}
 
-  .card {
+.card {
     box-sizing: border-box;
     margin: 1rem;
-  /*   padding: 1rem; */
+    /*   padding: 1rem; */
     flex: 0 0 220px;
-  }
+}
 
-  .card > a > img {
+.card > a > img {
+   width: 220px;
+    border: solid #d0a85c;
+}
+
+.card > img {
     width: 220px;
     border: solid #d0a85c;
-  }
+}
 
-  .card > img {
-    width: 220px;
-    border: solid #d0a85c;
-  }
-
-  .card > img:hover {
+.card > img:hover {
     border: solid #0BC4E2;
-  }
+}
 
-  .card > a > img:hover {
+.card > a > img:hover {
     border: solid #0BC4E2;
-  }
+}
+
+
+.card p {
+    color: #d0a85c;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

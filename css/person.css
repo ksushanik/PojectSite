@@ -5,29 +5,22 @@
 html,
 body {
     overflow-x: hidden;
-    padding: 0;
-    margin: 0;
     font-family: BeaufortforLOL-Bold, Arial, sans-serif;
-}
-
-body {
-    color: #fff;
-    font-size: 1.1em;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
 main {
     display: flex;
     flex-direction: column;
-    /*flex: 1 0 auto;*/
 }
 
 .block_1 {
-    background: url(https://i.yapx.ru/VPZM4.jpg) top;
+    background-image: url("/img/yone/Yone_0.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .block_2 {
@@ -109,7 +102,6 @@ main {
 }
 
 
-
 .history {
     display: flex;
     flex-flow: col wrap;
@@ -151,4 +143,3 @@ main {
     color: #D0A85C;
 
 }
-

@@ -1,0 +1,71 @@
+.champion {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.champion__header {
+    background-image: url("/img/yone/Yone_0.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.champion__header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.champion__header h1 {
+    font-size: 8vw;
+}
+
+.champion__header h2 {
+    font-size: 2vw;
+}
+
+.champion__header h1, h2 {
+    font-style: italic;
+}
+
+.champion__info {
+    display: flex; /* добавлено */
+    justify-content: center; /* добавлено */
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+}
+
+.champion__stats {
+    width: 48%; /* изменено с 30% на 48% */
+    border-right: 1px solid #e6e6e6; /* добавлено */
+    padding-right: 20px; /* добавлено */
+}
+
+.champion__stat {
+    margin-bottom: 10px;
+}
+
+.champion__stat span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.champion__lore {
+    width: 48%; /* изменено с 65% на 48% */
+    padding-left: 20px; /* добавлено */
+}
+
+.champion__lore h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.champion__lore p {
+    margin-bottom: 20px;
+}
+
