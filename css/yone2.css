@@ -17,22 +17,17 @@
 
 .hero-description {
     position: absolute;
-    top: 80%;
+    /*top: 80%;*/
     left: 50%;
-    transform: translate(-20%, -120%);
+    transform: translate(-50%, -100%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 2vw;
     color: #fff;
-    width: 50%;
-    height: 30%;
-    max-width: 800px;
-    min-width: 500px;
     border: 1px solid #e6e6e6;
 }
 
 .hero-description h1 {
-    transform: translate(-0%, -70%);
-    font-size: 4em;
+    font-size: 4vw;
     text-align: center;
     font-style: italic;
     text-transform: uppercase;
@@ -41,7 +36,7 @@
 .hero-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2vw;
     flex-wrap: wrap;
 }
 
@@ -53,17 +48,22 @@
     position: absolute;
     left: 10%;
     top: 10%;
+    width: 80%; /* Добавлено */
+    height: 80%; /* Добавлено */
 }
 
-
 .abilities-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute; /* Добавлено */
+    left: 0; /* Добавлено */
+    top: 10%; /* Добавлено */
+    width: 100%; /* Добавлено */
+    height: 100%; /* Добавлено */
 }
 
 .ability-icon {
-    margin: 5px 0 5px 0;
+    margin: 0.5vw 0;
+    width: 100%; /* Добавлено */
+    height: auto; /* Добавлено */
 }
 
 .ability-icon img {
@@ -73,7 +73,6 @@
 .ability-description {
     text-align: center;
 }
-
 
 .ability-info {
     visibility: hidden;
@@ -87,7 +86,7 @@
     backdrop-filter: blur(25px);
     color: #C4B998;
     text-align: justify;
-    padding: 10px;
+    padding: 1vw;
     transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
