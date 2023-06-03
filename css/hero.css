@@ -17,17 +17,18 @@
 
 .hero-description {
     position: absolute;
-    /*top: 80%;*/
     left: 50%;
     transform: translate(-50%, -100%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2vw;
+    padding: 20px;
     color: #fff;
     border: 1px solid #e6e6e6;
+    max-width: 800px;
+    max-height: 300px;
 }
 
 .hero-description h1 {
-    font-size: 4vw;
+    font-size: clamp(16px, 4vw, 60px);
     text-align: center;
     font-style: italic;
     text-transform: uppercase;
@@ -36,7 +37,7 @@
 .hero-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 2vw;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 
@@ -48,16 +49,16 @@
     position: absolute;
     left: 10%;
     top: 10%;
-    width: 80%; /* Добавлено */
-    height: 80%; /* Добавлено */
+    width: 80%;
+    height: 80%;
 }
 
 .abilities-wrapper {
-    position: absolute; /* Добавлено */
-    left: 0; /* Добавлено */
-    top: 10%; /* Добавлено */
-    width: 100%; /* Добавлено */
-    height: 100%; /* Добавлено */
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100%;
 }
 
 .ability-icon {
@@ -90,7 +91,7 @@
     transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
-.ability:hover .ability-info {
+.ability-icon:hover + .ability-info {
     visibility: visible;
     opacity: 1;
 }
@@ -106,4 +107,36 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+    /* Добавлено */
+    .hero-description {
+        display: none;
+    }
+
+    .abilities-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        top: 30%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-abilities {
+        position: absolute;
+        left: auto;
+        top: 10%;
+    }
+    body {
+        overflow: hidden;
+    }
 }

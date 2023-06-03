@@ -25,6 +25,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #000;
+    max-width: 1200px; /* задайте максимальную ширину */
+    margin: 0 auto; /* выровняйте содержимое по центру */
 }
 
 #logo {
@@ -59,19 +61,6 @@ footer {
     width: 20px;
     margin: 0 0 0 10px;
 }
-
-/*@media screen and (min-width: 1200px) {*/
-/*    body {*/
-/*        min-height: 100vh;*/
-/*        float: none;*/
-/*    }*/
-
-/*    main {*/
-/*        flex-direction: row;*/
-/*        min-height: 100%;*/
-/*        flex: 1 1 auto;*/
-/*    }*/
-/*}*/
 
 /* МЕНЮ НАВИГАЦИИ */
 
@@ -142,7 +131,7 @@ nav a:hover {
 }
 
 .card > a > img {
-   width: 220px;
+    width: 220px;
     border: solid #d0a85c;
 }
 
