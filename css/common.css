@@ -25,8 +25,15 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #000;
-    max-width: 1200px; /* задайте максимальную ширину */
-    margin: 0 auto; /* выровняйте содержимое по центру */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
 }
 
 #logo {
@@ -62,97 +69,15 @@ footer {
     margin: 0 0 0 10px;
 }
 
-/* МЕНЮ НАВИГАЦИИ */
-
-nav ul {
-    display: inline-flex;
-    padding: 15px 0;
+.hero-history, .hero-biography {
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-ul {
-    list-style: none;
-    margin: 0 auto;
-}
-
-nav a {
-    padding: 1em;
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: #35373e;
-}
-
-/* ПОИСК */
-
-.search {
-    float: right;
-}
-
-/* styling search bar */
-.search input[type="text"] {
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 30px;
-}
-
-.search button {
-    display: block;
-    float: right;
-    padding: 15px;
-    margin: 10px 30px auto 0;
-    background: #040115 url(https://clck.ru/338FwJ) no-repeat center;
-    border: none;
-    cursor: pointer;
-}
-
-.search button img {
-    width: 40px;
-}
-
-/* CARD */
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 20px;
-    justify-content: center;
-}
-
-.card {
-    box-sizing: border-box;
-    margin: 1rem;
-    /*   padding: 1rem; */
-    flex: 0 0 220px;
-}
-
-.card > a > img {
-    width: 220px;
-    border: solid #d0a85c;
-}
-
-.card > img {
-    width: 220px;
-    border: solid #d0a85c;
-}
-
-.card > img:hover {
-    border: solid #0BC4E2;
-}
-
-.card > a > img:hover {
-    border: solid #0BC4E2;
-}
-
-
-.card p {
-    color: #d0a85c;
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
