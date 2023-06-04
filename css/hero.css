@@ -76,8 +76,8 @@
 
 .ability-icon {
     margin: 0.5vw 0;
-    width: fit-content; /* Добавлено */
-    height: auto; /* Добавлено */
+    width: fit-content;
+    height: auto;
     border: 1px solid #e6e6e6;
     transition: transform 0.3s ease-in-out;
 }
@@ -88,7 +88,10 @@
 
 
 .ability-icon img {
-    object-fit: contain;
+  display: block;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .ability-description {
