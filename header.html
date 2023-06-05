@@ -1,7 +1,7 @@
 <header>
     <div class="wrap">
         <div id="logo">
-            <a href="#"><img src="./img/lol.png" alt=""></a>
+            <a href="/"><img src="./img/lol.png" alt=""></a>
         </div>
         <nav>
             <div class="menu-main">
@@ -14,6 +14,11 @@
                     <li><a href="#" class="filter" data-filter="support">ПОДДЕРЖКА</a></li>
                     <li><a href="#" class="filter" data-filter="tanks">ТАНКИ</a></li>
                 </ul>
+
+                <input type="search" id="query">
+                <button onclick="search()">Найти</button>
+                <div id="results"></div>
+
             </div>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox"/>

@@ -26,7 +26,7 @@
     max-width: 800px;
     max-height: 300px;
     /*добавим CSS-анимацию*/
-    animation: slide-down 0.5s ease-in-out forwards;
+    animation: slide-down 0.8s ease-in-out forwards;
 }
 
 @keyframes slide-down {
@@ -88,10 +88,10 @@
 
 
 .ability-icon img {
-  display: block;
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 .ability-description {
@@ -132,11 +132,51 @@
     }
 }
 
+/*ИСТОРИЯ и БИОГРАФИЯ*/
+
+
+.hero-history, .hero-biography, .hero-discovery {
+    position: relative;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 28px;
+    background-color: #1A1A1A;
+    font-weight: 700;
+    color: #C4B998;
+    text-align: justify;
+}
+
+.hero-history h2, .hero-biography h2, .hero-discovery h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border-top: 2px solid #C4B998;
+    border-bottom: 2px solid #C4B998;
+    padding: 10px 0;
+}
+
+.read-more-btn {
+    font-family: BeaufortforLOL-Bold, Arial, sans-serif;
+    background: none;
+    border: none;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
 /* MEDIA */
 
 @media screen and (max-width: 768px) {
     /* Добавлено */
     .hero-description {
+        display: none;
+    }
+
+    .hero-abilities h2 {
         display: none;
     }
 
@@ -146,6 +186,7 @@
         justify-content: space-around;
         top: 30%;
     }
+
 }
 
 @media screen and (min-width: 1600px) {
@@ -157,9 +198,5 @@
         position: absolute;
         left: auto;
         top: 10%;
-    }
-
-    body {
-        overflow: hidden;
     }
 }
