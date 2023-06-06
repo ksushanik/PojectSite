@@ -148,7 +148,7 @@
 
 .hero-history, .hero-biography, .hero-discovery, .hero-related {
     position: relative;
-    margin: 0;
+    margin-top: 3%;
     font-size: 22px;
     line-height: 28px;
     background-color: #1A1A1A;
