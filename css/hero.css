@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.hero-body {
+    background-image: url("../img/darius/Darius_0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .hero-image {
     position: relative;
     text-align: center;
@@ -95,8 +102,12 @@
 }
 
 .ability-description {
-    text-align: center;
+    text-align: left;
     max-width: 400px;
+}
+
+.ability-name {
+    text-align: center;
 }
 
 .ability-info {
@@ -107,7 +118,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
     backdrop-filter: blur(25px);
     border: 1px solid #e6e6e6;
     text-align: justify;
@@ -135,10 +146,9 @@
 /*ИСТОРИЯ и БИОГРАФИЯ*/
 
 
-.hero-history, .hero-biography, .hero-discovery {
+.hero-history, .hero-biography, .hero-discovery, .hero-related {
     position: relative;
-    margin-top: 50px;
-    padding: 20px;
+    margin: 0;
     font-size: 22px;
     line-height: 28px;
     background-color: #1A1A1A;
@@ -147,7 +157,11 @@
     text-align: justify;
 }
 
-.hero-history h2, .hero-biography h2, .hero-discovery h2 {
+.hero-history h2,
+.hero-biography h2,
+.hero-discovery h2,
+.hero-related h2 {
+    color: #D0A85C;
     text-align: center;
     font-size: 2em;
     line-height: 1.5;
@@ -155,13 +169,20 @@
     border-top: 2px solid #C4B998;
     border-bottom: 2px solid #C4B998;
     padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.hero-discovery .block,
+.hero-related .block {
+    background-image: url("../img/img.png");
+    padding: 10px;
 }
 
 .read-more-btn {
     font-family: BeaufortforLOL-Bold, Arial, sans-serif;
     background: none;
     border: none;
-    color: #fff;
+    color: #D0A85C;
     text-decoration: underline;
     cursor: pointer;
     font-size: 22px;
@@ -198,5 +219,9 @@
         position: absolute;
         left: auto;
         top: 10%;
+    }
+
+    html, body {
+        overflow: hidden;
     }
 }

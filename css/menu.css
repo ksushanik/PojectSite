@@ -21,6 +21,7 @@ nav a:hover {
     background: #35373e;
 }
 
+/*Бургер-меню*/
 
 .hamburger-menu {
     display: none;
@@ -94,7 +95,7 @@ nav a:hover {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #616161;
+    background-color: #1f1f1f;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
 }
@@ -103,7 +104,6 @@ nav a:hover {
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -112,6 +112,13 @@ nav a:hover {
 
 .menu__item:hover {
     background-color: #CFD8DC;
+}
+
+@media screen and (max-width: 1200px) {
+    #query, .search {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -134,7 +141,8 @@ nav a:hover {
     .menu__box a {
         display: block;
         padding: 10px;
-        text-align: center;
+        text-align: left;
+        margin-left: 10%;
     }
 
     .menu__btn span {

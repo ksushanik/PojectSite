@@ -1,6 +1,7 @@
 .card {
-    width: 220px;
-    margin: 20px;
+    position: relative;
+    width: 40%;
+    margin: 3%;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -18,6 +19,10 @@
 }
 
 .card-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     font-size: 18px;
@@ -25,22 +30,45 @@
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    text-transform: uppercase;
+    animation: blink 1s infinite;
+    /* Добавляем изменение цвета подложки */
+    transition: background-color 0.2s ease-in-out;
 }
 
+.card:hover .card-name {
+    background-color: #0BC4E2;
+}
+
+
 .card p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .card > img {
-    border: solid 4px #d0a85c;
+    /*border: solid 2px #d0a85c;*/
     transition: transform 0.2s ease-in-out;
 }
 
 .card > img:hover {
     border-color: #0BC4E2;
     transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 220px; /* задаем максимальную ширину блока */
+        width: auto; /* сбрасываем ширину на автоматическую */
+        margin: 20px;
+    }
 }

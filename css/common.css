@@ -73,62 +73,68 @@ footer {
 /*Страница с результатом поиска*/
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
 }
- .modal-content {
-  background-color: #C4B998;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+
+.modal-content {
+    background-color: #C4B998;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
- .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
- .close:hover,
+
+.close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
- #query {
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-  width: 200px;
+#query {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 200px;
 }
- button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #616161;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+
+button {
+    font-family: "BeaufortforLOL-Bold";
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #616161;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
- #results {
-  margin-top: 10px;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
+
+#results {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 
- /*Вселенные*/
+/*Вселенные*/
 
 .discovery-img {
     width: 300px;
