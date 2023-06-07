@@ -1,13 +1,14 @@
+// Ищем введенный пользователем запрос в массиве страниц и выводим результаты на странице.
 function search() {
-  var query = document.getElementById('query').value.toLowerCase();
-  var pages = ['index.html', 'lux.html', 'yone.html', 'darius.html'];
-  var results = document.getElementById('results');
-  results.innerHTML = '';
+  let query = document.getElementById('query').value.toLowerCase();
+  let pages = ['index.html', 'lux.html', 'yone.html', 'darius.html'];
+  let results = document.getElementById('results');
+  results.innerHTML = 'Результат поиска<br><br>';
 
   // Создаем массив промисов для загрузки страниц
-  var promises = pages.map(function (page) {
+  let promises = pages.map(function (page) {
     return new Promise(function (resolve, reject) {
-      var xhr = new XMLHttpRequest();
+      let xhr = new XMLHttpRequest();
       xhr.open('GET', page, true);
       xhr.onload = function () {
         resolve(xhr.responseText.toLowerCase());
@@ -21,17 +22,17 @@ function search() {
 
   // Запускаем поиск после загрузки всех страниц
   Promise.all(promises).then(function (responses) {
-    for (var i = 0; i < responses.length; i++) {
+    for (let i = 0; i < responses.length; i++) {
       if (responses[i].indexOf(query) !== -1) {
-        var div = document.createElement('div');
+        let div = document.createElement('div');
         div.innerHTML = '<a href="' + pages[i] + '">' + pages[i] + '</a><br><br>';
         results.appendChild(div);
       }
     }
 
     // Открываем модальное окно
-    var modal = document.getElementById('myModal');
-    var span = document.getElementsByClassName('close')[0];
+    let modal = document.getElementById('myModal');
+    let span = document.getElementsByClassName('close')[0];
     modal.style.display = 'block';
 
     // Закрываем модальное окно при клике на кнопку закрытия
@@ -41,7 +42,7 @@ function search() {
 
     // Закрываем модальное окно при клике за его пределами
     window.onclick = function (event) {
-      if (event.target == modal) {
+      if (event.target === modal) {
         modal.style.display = 'none';
       }
     };

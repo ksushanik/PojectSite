@@ -26,10 +26,10 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -100%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    color: #fff;
-    border: 1px solid #e6e6e6;
+    color: #C4B998;
+    border: 1px solid #D0A85C;
     max-width: 800px;
     max-height: 300px;
     /*добавим CSS-анимацию*/
@@ -52,6 +52,7 @@
     text-align: center;
     font-style: italic;
     text-transform: uppercase;
+    color: #D0A85C;
 }
 
 .hero-info {
@@ -73,6 +74,10 @@
     height: 80%;
 }
 
+.hero-abilities h2 {
+    display: none;
+}
+
 .abilities-wrapper {
     position: absolute;
     left: 0;
@@ -85,7 +90,7 @@
     margin: 0.5vw 0;
     width: fit-content;
     height: auto;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #D0A85C;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -112,15 +117,16 @@
 
 .ability-info {
     visibility: hidden;
+    color: #C4B998;
     opacity: 0;
     position: fixed;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
     backdrop-filter: blur(25px);
-    border: 1px solid #e6e6e6;
+    border: 1px solid #D0A85C;
     text-align: justify;
     padding: 1vw;
     transition: visibility 0s, opacity 0.5s ease-in-out;
@@ -148,11 +154,11 @@
 
 .hero-history, .hero-biography, .hero-discovery, .hero-related {
     position: relative;
-    margin-top: 3%;
-    font-size: 22px;
+    margin-top: 5%;
+    font-size: 18px;
     line-height: 28px;
     background-color: #1A1A1A;
-    font-weight: 700;
+    /*font-weight: 700;*/
     color: #C4B998;
     text-align: justify;
 }
@@ -222,6 +228,6 @@
     }
 
     html, body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }

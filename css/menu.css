@@ -100,39 +100,25 @@ nav a:hover {
     transition-duration: .25s;
 }
 
-.menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-
-.menu__item:hover {
-    background-color: #CFD8DC;
-}
 
 @media screen and (max-width: 1200px) {
-    #query, .search {
-        display: none;
-    }
 
-}
+    nav {
+        position: relative;
+        text-align: right;
+        padding: 30px 50px;
 
-@media screen and (max-width: 900px) {
-    .menu-main {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
     }
 
     .navbar-nav {
         display: none;
     }
+
+
+    .hamburger-menu {
+        display: block;
+    }
+
 
     .menu__box {
         display: block;
@@ -157,5 +143,13 @@ nav a:hover {
         right: 10px;
         z-index: 999;
         cursor: pointer;
+    }
+}
+
+/*Для маленьких телефонов*/
+
+@media screen and (max-width: 413px) {
+    #logo {
+        display: none;
     }
 }

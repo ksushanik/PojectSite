@@ -1,7 +1,7 @@
 <header>
     <div class="wrap">
         <div id="logo">
-            <a href="/"><img src="./img/lol.png" alt=""></a>
+            <a href="/"><img src="./img/lol.png" alt="Logo"></a>
         </div>
         <nav>
             <div class="menu-main">
@@ -15,8 +15,7 @@
                     <li><a href="#" class="filter" data-filter="tanks">ТАНКИ</a></li>
                 </ul>
 
-                <input type="search" id="query" autofocus>
-                <button class="search" onclick="search()">Найти</button>
+                <input type="search" id="query" onkeydown="if(event.keyCode==13) search()">
                 <div id="results"></div>
 
             </div>
